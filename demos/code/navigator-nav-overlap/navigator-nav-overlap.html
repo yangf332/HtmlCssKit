@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>导航 - UL重叠圆角图片</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/navigator-nav-overlap/navigator-nav-overlap.css" />
+	</head>
+	<body style="padding: 10px;">
+		<div class="nav">
+			<ul>
+				<li class="first"><a href="index.html" title="" class="current"><b></b><span>首页</span></a></li>
+				<li><a href="metaData.html" title="元数据" ><span>元数据</span></a></li>
+				<li><a href="service.html" title="相关服务" ><span>相关服务</span></a></li>
+				<li><a href="dataCenter.html" title="资料中心" class="current"><span>资料中心</span></a></li>
+				<li><a href="standard.html" title="标准规范" ><span>标准规范</span></a></li>
+				<li><a href="platform.html" title="关于平台" ><span>关于平台</span></a></li>
+				<li><a href="contactUs.html" title="联系我们" ><span>联系我们</span></a></li>
+				<li><a href="news.html" title="站内公告" ><span>站内公告</span></a></li>
+				<li><a href="update.html" title="数据动态更新" ><span>数据动态更新</span></a></li>
+			</ul>
+			<span class="nav_r"></span>
+		</div>
+		<br />
+		<div class="nav">
+			<ul>
+				<li class="first"><a href="index.html" title="" class=""><b></b><span>首页</span></a></li>
+				<li><a href="metaData.html" title="元数据" ><span>元数据</span></a></li>
+				<li><a href="service.html" title="相关服务" ><span>相关服务</span></a></li>
+				<li><a href="dataCenter.html" title="资料中心" class="current"><span>资料中心</span></a></li>
+				<li><a href="standard.html" title="标准规范" ><span>标准规范</span></a></li>
+				<li><a href="platform.html" title="关于平台" ><span>关于平台</span></a></li>
+				<li><a href="contactUs.html" title="联系我们" ><span>联系我们</span></a></li>
+				<li><a href="news.html" title="站内公告" ><span>站内公告</span></a></li>
+				<li><a href="update.html" title="数据动态更新" ><span>数据动态更新</span></a></li>
+			</ul>
+			<span class="nav_r"></span>
+		</div>
+
+		<pre class="codes">
+说明:较早的代码，未完全整理;另外两边的圆角图片切错了，也找不到之前的设计图，未修正
+		</pre>
+		<pre class="codes">
+.nav {
+	margin:0 auto;
+	padding-left:6px;
+	width:949px;
+	height:30px;
+	background:url(../../images/navigator-nav-overlap/bg_nav.png) repeat-x;}
+* html .nav { padding-left:0; width:955px;}
+.nav ul ,
+.nav ul li { float:left; }
+.nav ul li a {
+	float:left;padding:0 0 0 30px;
+	margin-left:-6px;
+	height:30px;
+	text-decoration:none;
+	font:14px/30px "宋体";
+	color:#000;
+	}
+.nav ul li span{
+	float:left;
+	padding-right:25px;
+	cursor:pointer;
+	background:url(../../images/navigator-nav-overlap/right_nav.png) no-repeat right center;}
+.nav ul li a.current {
+	font-weight:bold;
+	color:#fff;
+	background:url(../../images/navigator-nav-overlap/bg_nav_l.png) no-repeat ;}
+.nav ul li a:hover { color:#FFF;}
+.nav ul li a.current span {
+	background:url(../../images/navigator-nav-overlap/bg_navright_hover.png) no-repeat right center;}
+.nav ul li.first{ padding-left:0}
+.nav ul li.first a { padding-left:0}
+.nav ul li.first a b{
+	float:left;
+	margin-right:25px;
+	width:5px;
+	height:29px;
+	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -150px;}
+.nav ul li.first a.current {
+	background:url(../../images/navigator-nav-overlap/bg_nav_hover.gif) repeat-x left center;}
+.nav ul li.first  a.current b{
+	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 0;}
+
+.nav_r{
+	float: right;
+	width: 5px;
+	height: 29px;
+	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -90px;
+}</pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<div class="nav">
+	<ul>
+		<li class="first"><a href="index.html" title="" class="current"><b></b><span>首页</span></a></li>
+		<li><a href="metaData.html" title="元数据" ><span>元数据</span></a></li>
+		<li><a href="service.html" title="相关服务" ><span>相关服务</span></a></li>
+		<li><a href="dataCenter.html" title="资料中心" class="current"><span>资料中心</span></a></li>
+		<li><a href="standard.html" title="标准规范" ><span>标准规范</span></a></li>
+		<li><a href="platform.html" title="关于平台" ><span>关于平台</span></a></li>
+		<li><a href="contactUs.html" title="联系我们" ><span>联系我们</span></a></li>
+		<li><a href="news.html" title="站内公告" ><span>站内公告</span></a></li>
+		<li><a href="update.html" title="数据动态更新" ><span>数据动态更新</span></a></li>
+	</ul>
+	<span class="nav_r"></span>
+</div></textarea>
+	</body>
+
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

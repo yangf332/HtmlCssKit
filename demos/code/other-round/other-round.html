@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无图片 标签圆角</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+
+/* 块级元素 */
+.c_title, .c_title h2 {
+font-size:14px;
+}
+.c_title {
+background-color:#D5F1FF;
+color:#00527B;
+height:100%;
+line-height:23px;
+overflow:hidden;
+padding:2px 10px 0;
+}
+.c_cont {
+background-color:#FFFFFF;
+border-width:3px 4px;
+padding:5px 8px 10px;
+}
+b.rtop, b.rbottom, b.rtop b, b.rbottom b {
+display:block;
+}
+.column, b.rtop b, b.rbottom b {
+border-color:#B2E5FF;
+border-style:solid;
+border-width:0 1px;
+}
+b.rtop b, b.rbottom b {
+height:1px;
+overflow:hidden;
+}
+b.r1 {
+background-color:#B2E5FF;
+margin:0 2px;
+}
+b.r2 {
+background-color:#D5F1FF;
+margin:0 1px;
+}
+b.rtop b.r2 {
+background-color:#E6F7FF;
+}
+b.rbottom {
+margin-bottom:10px;
+}
+.white_BG b.rbottom {
+margin:0;
+}
+.white_BG {
+background-color:#D5F1FF;
+padding:5px 5px 14px;
+}
+.pb5px {
+padding-bottom:5px;
+}
+div.white_BG b.rtop b, div.white_BG b.rbottom b {
+background-color:#FFFFFF !important;
+border-color:#FFFFFF !important;
+}
+div.two_class {
+height:23px;
+overflow:inherit;
+}
+.two_class h2, .two_class li {
+float:left;
+}
+.two_class ul {
+background-position:0 -94px;
+float:right;
+margin-top:3px;
+position:relative;
+width:107px;
+}
+.two_class .two_current {
+background-position:0 -119px;
+}
+.two_class li {
+color:#666666;
+font-size:12px;
+height:25px;
+line-height:25px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+text-align:center;
+width:53px;
+}
+div.blue_c_style .column, div.blue_c_style b.rtop b, div.blue_c_style b.rbottom b {
+border-color:#BAD7F6;
+}
+div.blue_c_style b.r1 {
+background-color:#BAD7F6;
+}
+div.blue_c_style .c_title {
+color:#004C99;
+}
+div.blue_c_style b.rtop b.r2 {
+background-color:#E8F2FC;
+}
+div.blue_c_style b.r2, div.blue_c_style .c_title, div.blue_c_style .column, div.blue_c_style .white_BG {
+background-color:#D9E9FA;
+}
+div.blue_c_style .c_title, div.blue_c_style .c_cont {
+border-color:#D9E9FA;
+}
+div.green_c_style .column, div.green_c_style b.rtop b, div.green_c_style b.rbottom b {
+border-color:#8EDC6F;
+}
+div.green_c_style b.r1 {
+background-color:#8EDC6F;
+}
+div.green_c_style .c_title {
+color:#336600;
+}
+div.green_c_style b.rtop b.r2 {
+background-color:#DAF4D0;
+}
+div.green_c_style b.r2, div.green_c_style .c_title, div.green_c_style .column, div.green_c_style .white_BG {
+background-color:#C1ECB0;
+}
+div.green_c_style .c_title, div.green_c_style .c_cont {
+border-color:#C1ECB0;
+}
+div.blue0_c_style .column, div.blue0_c_style b.rtop b, div.blue0_c_style b.rbottom b {
+border-color:#ABF0FB;
+}
+div.blue0_c_style b.r1 {
+background-color:#ABF0FB;
+}
+div.blue0_c_style .c_title {
+color:#007A94;
+}
+div.blue0_c_style b.rtop b.r2 {
+background-color:#E3FAFE;
+}
+div.blue0_c_style b.r2, div.blue0_c_style .c_title, div.blue0_c_style .column, div.blue0_c_style .white_BG {
+background-color:#D1F7FD;
+}
+div.blue0_c_style .c_title, div.blue0_c_style .c_cont {
+border-color:#D1F7FD;
+}
+.blue0_c_style li.li_even {
+background-color:#F2FDFF;
+}
+div.yellow_c_style .column, div.yellow_c_style b.rtop b, div.yellow_c_style b.rbottom b {
+border-color:#FFD090;
+}
+div.yellow_c_style .c_title {
+color:#CC6600;
+}
+div.yellow_c_style b.r1 {
+background-color:#FFD090;
+}
+div.yellow_c_style b.rtop b.r2 {
+background-color:#FFEFDA;
+}
+div.yellow_c_style b.r2, div.yellow_c_style .c_title, div.yellow_c_style .column, div.yellow_c_style .white_BG {
+background-color:#FFE5C2;
+}
+div.yellow_c_style .c_title, div.yellow_c_style .c_cont {
+border-color:#FFE5C2;
+}
+div.orange_c_style .column, div.orange_c_style b.rtop b, div.orange_c_style b.rbottom b {
+border-color:#FFCD3F;
+}
+div.orange_c_style .c_title {
+color:#E57200;
+}
+div.orange_c_style b.r1 {
+background-color:#FFCD3F;
+}
+div.orange_c_style b.rtop b.r2 {
+background-color:#FFFBEE;
+}
+div.orange_c_style b.r2, div.orange_c_style .c_title, div.orange_c_style .column, div.orange_c_style .white_BG {
+background-color:#FFF1C6;
+}
+div.orange_c_style .c_title, div.orange_c_style .c_cont {
+border-color:#FFF1C6;
+}
+
+		</style>
+	</head>
+	<body style="padding: 10px;">
+<div class="">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+
+<div class="green_c_style">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+
+<div class="yellow_c_style">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+
+<div class="orange_c_style">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+
+
+<div class="blue0_c_style">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+<!---->
+
+<div class="">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <!---->
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+
+        <!---->
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+        <!---->
+
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+        <!---->
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div>
+
+
+		<pre class="codes">
+/* 块级元素 */
+.c_title, .c_title h2 {
+font-size:14px;
+}
+.c_title {
+background-color:#D5F1FF;
+color:#00527B;
+height:100%;
+line-height:23px;
+overflow:hidden;
+padding:2px 10px 0;
+}
+.c_cont {
+background-color:#FFFFFF;
+border-width:3px 4px;
+padding:5px 8px 10px;
+}
+b.rtop, b.rbottom, b.rtop b, b.rbottom b {
+display:block;
+}
+.column, b.rtop b, b.rbottom b {
+border-color:#B2E5FF;
+border-style:solid;
+border-width:0 1px;
+}
+b.rtop b, b.rbottom b {
+height:1px;
+overflow:hidden;
+}
+b.r1 {
+background-color:#B2E5FF;
+margin:0 2px;
+}
+b.r2 {
+background-color:#D5F1FF;
+margin:0 1px;
+}
+b.rtop b.r2 {
+background-color:#E6F7FF;
+}
+b.rbottom {
+margin-bottom:10px;
+}
+.white_BG b.rbottom {
+margin:0;
+}
+.white_BG {
+background-color:#D5F1FF;
+padding:5px 5px 14px;
+}
+.pb5px {
+padding-bottom:5px;
+}
+div.white_BG b.rtop b, div.white_BG b.rbottom b {
+background-color:#FFFFFF !important;
+border-color:#FFFFFF !important;
+}
+div.two_class {
+height:23px;
+overflow:inherit;
+}
+.two_class h2, .two_class li {
+float:left;
+}
+.two_class ul {
+background-position:0 -94px;
+float:right;
+margin-top:3px;
+position:relative;
+width:107px;
+}
+.two_class .two_current {
+background-position:0 -119px;
+}
+.two_class li {
+color:#666666;
+font-size:12px;
+height:25px;
+line-height:25px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+text-align:center;
+width:53px;
+}
+div.blue_c_style .column, div.blue_c_style b.rtop b, div.blue_c_style b.rbottom b {
+border-color:#BAD7F6;
+}
+div.blue_c_style b.r1 {
+background-color:#BAD7F6;
+}
+div.blue_c_style .c_title {
+color:#004C99;
+}
+div.blue_c_style b.rtop b.r2 {
+background-color:#E8F2FC;
+}
+div.blue_c_style b.r2, div.blue_c_style .c_title, div.blue_c_style .column, div.blue_c_style .white_BG {
+background-color:#D9E9FA;
+}
+div.blue_c_style .c_title, div.blue_c_style .c_cont {
+border-color:#D9E9FA;
+}
+div.green_c_style .column, div.green_c_style b.rtop b, div.green_c_style b.rbottom b {
+border-color:#8EDC6F;
+}
+div.green_c_style b.r1 {
+background-color:#8EDC6F;
+}
+div.green_c_style .c_title {
+color:#336600;
+}
+div.green_c_style b.rtop b.r2 {
+background-color:#DAF4D0;
+}
+div.green_c_style b.r2, div.green_c_style .c_title, div.green_c_style .column, div.green_c_style .white_BG {
+background-color:#C1ECB0;
+}
+div.green_c_style .c_title, div.green_c_style .c_cont {
+border-color:#C1ECB0;
+}
+div.blue0_c_style .column, div.blue0_c_style b.rtop b, div.blue0_c_style b.rbottom b {
+border-color:#ABF0FB;
+}
+div.blue0_c_style b.r1 {
+background-color:#ABF0FB;
+}
+div.blue0_c_style .c_title {
+color:#007A94;
+}
+div.blue0_c_style b.rtop b.r2 {
+background-color:#E3FAFE;
+}
+div.blue0_c_style b.r2, div.blue0_c_style .c_title, div.blue0_c_style .column, div.blue0_c_style .white_BG {
+background-color:#D1F7FD;
+}
+div.blue0_c_style .c_title, div.blue0_c_style .c_cont {
+border-color:#D1F7FD;
+}
+.blue0_c_style li.li_even {
+background-color:#F2FDFF;
+}
+div.yellow_c_style .column, div.yellow_c_style b.rtop b, div.yellow_c_style b.rbottom b {
+border-color:#FFD090;
+}
+div.yellow_c_style .c_title {
+color:#CC6600;
+}
+div.yellow_c_style b.r1 {
+background-color:#FFD090;
+}
+div.yellow_c_style b.rtop b.r2 {
+background-color:#FFEFDA;
+}
+div.yellow_c_style b.r2, div.yellow_c_style .c_title, div.yellow_c_style .column, div.yellow_c_style .white_BG {
+background-color:#FFE5C2;
+}
+div.yellow_c_style .c_title, div.yellow_c_style .c_cont {
+border-color:#FFE5C2;
+}
+div.orange_c_style .column, div.orange_c_style b.rtop b, div.orange_c_style b.rbottom b {
+border-color:#FFCD3F;
+}
+div.orange_c_style .c_title {
+color:#E57200;
+}
+div.orange_c_style b.r1 {
+background-color:#FFCD3F;
+}
+div.orange_c_style b.rtop b.r2 {
+background-color:#FFFBEE;
+}
+div.orange_c_style b.r2, div.orange_c_style .c_title, div.orange_c_style .column, div.orange_c_style .white_BG {
+background-color:#FFF1C6;
+}
+div.orange_c_style .c_title, div.orange_c_style .c_cont {
+border-color:#FFF1C6;
+}
+</pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<div class="green_c_style">
+    <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+
+    <div class="column ">
+        <div class="c_title"><h2>新闻管理</h2></div>
+        <div class="white_BG pb5px">
+            <b class="rtop"><b class="r1"></b><b class="r2"></b></b>
+            <div class="c_cont ">
+            content
+            </div>
+            <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+        </div>
+    </div>
+
+    <b class="rbottom"><b class="r2"></b><b class="r1"></b></b>
+</div></textarea>
+	</body>
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

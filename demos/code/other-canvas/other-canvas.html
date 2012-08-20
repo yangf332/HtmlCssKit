@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Canvas API</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+		</style>
+	</head>
+	<body style="padding: 10px;">
+
+
+
+		<pre class="codes">
+https://developer.mozilla.org/cn/Canvas_tutorial
+
+
+var ctx = document.getElementById("canvas").getContext("2d");
+
+//////////////////////////////////////////////
+// Rectangles
+/////////////////////////////////////////////
+
+// 矩形
+ctx.fillRect(0,0,100,100); //x, y, width, height
+ctx.clearRect(0,0,20,20);
+ctx.strokeRect(0,0,150,150);
+
+//////////////////////////////////////////////
+// Paths
+/////////////////////////////////////////////
+
+ctx.beginPath();
+// 绘制路径
+ctx.closePath();
+ctx.stroke() | ctx.fill() // fill会自动关闭路径
+
+// 线
+ctx.moveTo(100,100);
+ctx.lineTo(200,200);
+ctx.stroke();
+
+// 圆
+ctx.arc(100,100,20,0,Math.PI*2,1); //x, y, radius, startAngle, endAngle, anticlockwise
+ctx.stroke();
+// anticlockwise{true?'顺时针':' 逆时针'}
+// arc 方法里用到的角度是以弧度为单位而不是度。度和弧度直接的转换可以用这个表达式：var radians = (Math.PI/180)*degrees
+
+// 曲线
+ctx.moveTo(75,25);
+ctx.quadraticCurveTo(25,25,25,62.5); // cp1x, cp1y, x, y
+ctx.stroke();
+
+ctx.moveTo(75,25);
+ctx.bezierCurveTo(20,25,20,62.5,20,62.5); // cp1x, cp1y, cp2x, cp2y, x, y
+ctx.stroke();
+//参数 x 和 y 是终点坐标，cp1x 和 cp1y 是第一个控制点的坐标，cp2x 和 cp2y 是第二个的。
+
+
+
+// 矩形
+ctx.rect(0,0,100,100); //x, y, width, height
+ctx.stroke();
+
+// 裁切
+clip();
+
+
+//////////////////////////////////////////////
+// Image drawing
+/////////////////////////////////////////////
+
+//
+var img = new Image();
+img.src = 'cloud.png';
+img.onload = function(){
+        ctx.drawImage(img,0,0);
+}
+
+ctx.drawImage(img, 0, 0, 50, 50); // o,dx,dy,dw,dh
+// 切片
+ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
+
+// 图案Patterns
+var img = new Image();
+img.src = 'cloud.png';
+var ptrn = ctx.createPattern(img, 'repeat'); // repeat | repeat-x | repeat-y | no-repeat
+ctx.fillStyle = ptrn;
+ctx.fillRect(0,0,150,150);
+
+
+//////////////////////////////////////////////
+// Colors,styles and shadows
+/////////////////////////////////////////////
+
+// Attributes
+ctx.strokeStyle       = '#ccc';
+ctx.fillStyle            = '#ccc';
+ctx.shadowOffsetX = 3
+ctx.shadowOffsetY = 3
+ctx.shadowColor    = '#ccc';
+ctx.shadowBlur      = 3; // 阴影的模糊程度
+
+// Methods
+// 渐变
+var lingrad2 = ctx.createLinearGradient(0,50,0,95);
+lingrad2.addColorStop(0.5, '#000');
+lingrad2.addColorStop(1, 'rgba(0,0,0,0)');
+ctx.strokeStyle = lingrad2;
+ctx.strokeRect(50,50,50,50);
+
+var lingrad = ctx.createLinearGradient(0,0,0,150);
+lingrad.addColorStop(0, '#00ABEB');
+lingrad.addColorStop(0.5, '#fff');
+ctx.fillStyle = lingrad;
+ctx.fillRect(10,10,130,130);
+
+// addColorStop 方法接受 2 个参数，position 参数必须是一个 0.0 与 1.0 之间的数值，表示渐变中颜色所在的相对位置。例如，0.5 表示颜色会出现在正中间。color 参数必须是一个有效的 CSS 颜色值（如 #FFF， rgba(0,0,0,1)，等等）。
+
+// 圆形渐变
+var radgrad = ctx.createRadialGradient(45,45,10,52,50,30);
+radgrad.addColorStop(0, '#A7D30C');
+radgrad.addColorStop(0.9, '#019F62');
+radgrad.addColorStop(1, 'rgba(1,159,98,0)');
+ctx.fillStyle = radgrad;
+ctx.fillRect(0,0,150,150);
+
+
+
+//////////////////////////////////////////////
+// Text
+/////////////////////////////////////////////
+
+// Attributes
+ctx.font = '';
+ctx.textAlign = 'left';
+ctx.textBaseline = '';
+ctx. fillText('hello', x, y);
+ctx. strokeText('hello', x, y);
+
+
+
+ctx.font = '';
+ctx.textAlign = 'left';
+ctx.textBaseline = '';
+ctx. fillText('hello', x, y);
+
+
+//////////////////////////////////////////////
+// 2D Context
+/////////////////////////////////////////////
+ctx.save();
+ctx.restore();
+//canvas的状态是以堆的方式保存的
+
+//////////////////////////////////////////////
+// Transformation
+/////////////////////////////////////////////
+
+ctx.translate(x, y); // 移动canvas的原点
+ctx.rotate(Math.PI*2/6);// canvas以原点旋转
+ctx.scale(0.5, 0.5); // 缩放
+
+//////////////////////////////////////////////
+// Compositing
+/////////////////////////////////////////////
+ctx.globalAlpha = 0.5;
+ctx.globalCompositeOperation = source-over | source-in |
+  source-out | source-atop | destination-over | destination-in |
+  destination-out | destination-atop | lighter | copy | xor
+
+
+// 有用的函数
+function roundedRect(ctx,x,y,width,height,radius){
+  ctx.beginPath();
+  ctx.moveTo(x,y+radius);
+  ctx.lineTo(x,y+height-radius);
+  ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
+  ctx.lineTo(x+width-radius,y+height);
+  ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
+  ctx.lineTo(x+width,y+radius);
+  ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
+  ctx.lineTo(x+radius,y);
+  ctx.quadraticCurveTo(x,y,x,y+radius);
+  ctx.stroke();
+} </pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<canvas id="canvas">您的浏览器不支持Canvas，请升级后再尝试</canvas></textarea>
+	</body>
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

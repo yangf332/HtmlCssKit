@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>布局 - 容器</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/layout-box/layout-box.css" />
+	</head>
+	<body style="padding: 10px;">
+		<div style="width:300px;">
+
+			<div class="box">
+				<div class="hd">
+					<h3>Header</h3>
+					<a class="more">more</a>
+				</div>
+				<div class="bd">
+					最基本的容器内容
+				</div>
+			</div>
+
+			<br />
+
+			<div class="box box-gray shadowbd bdpadding10">
+				<div class="hd">
+					<h3>box-gray</h3>
+				</div>
+				<div class="bd">
+					bd
+				</div>
+			</div>
+
+			<br />
+
+			<div class="box box-blue bdpadding10">
+				<div class="hd">
+					<h3>box-blue</h3>
+				</div>
+				<div class="bd">
+					bd
+				</div>
+			</div>
+
+			<br />
+
+			<div class="box box-light bdpadding10">
+				<div class="hd">
+					<h3>box-light</h3>
+					<a href="#" class="more" title="">more</a>
+				</div>
+				<div class="bd">
+					bd
+				</div>
+			</div>
+
+		</div>
+
+		<pre class="codes">
+/* box基本样式 {*/
+.box {
+	border: 1px solid #A0D3F2;
+	background: #fff;
+}
+.box .hd {
+	height:32px;
+	line-height:32px;
+	/*border-bottom: 1px solid #A0D3F2;*/
+}
+.box .hd h3 {
+	float:left;
+	display: inline;
+	height: 30px;
+	line-height: 30px;
+	font-size:14px;
+	color: #3C3C3C;
+	font-family: "微软雅黑","宋体",Arial, sans-serif;
+}
+.box .hd .more{
+	float: right;
+	display: inline;
+}
+.box .bd {
+	overflow: hidden;
+}
+/* box基本样式 }*/
+
+
+
+
+
+
+
+/* box类别 */
+.shadowbd .bd,
+.box-gray .hd,
+.box-blue .hd{
+	background-image: url(../../images/layout-box/bg_repeatX.png);
+	background-repeat: repeat-x;
+}
+
+.box-gray .hd h3,
+.box-blue .hd h3{
+	background-image: url(../../images/layout-box/bg.png);
+	background-repeat: no-repeat;
+}
+
+/* box-gray */
+.box-gray{
+	padding: 1px;
+}
+.box-gray .hd{
+	height: 32px;
+	line-height: 32px;
+	background-position: 0 -151px;
+}
+.box-gray .hd h3{
+	margin-left: 8px;
+	padding-left: 24px;
+	background-position: -20px -8px;
+}
+
+/* box-blue */
+.box-blue{
+	padding: 1px;
+}
+.box-blue .hd{
+	height: 34px;
+	line-height: 34px;
+	background-position: 0 -228px;
+}
+.box-blue .hd h3{
+	margin-left: 8px;
+	padding-left: 24px;
+	background-position: -20px -95px;
+}
+.box-blue .bd{
+	background: #D1EAFF;
+}
+
+/* box-light */
+.box-light{}
+.box-light .hd{
+	padding: 0 22px 0 8px;
+	height: 38px;
+	line-height: 38px;
+	background:url(../../images/layout-box/bg_boxhd.png) repeat-x 0 0;
+}
+.box-light .hd h3{
+	height: 38px;
+	line-height: 38px;
+	padding-left: 22px;
+	font-size: 14px;
+	background:url(../../images/layout-box/arr.png) no-repeat left center;
+}
+.box-light .hd a.more{
+	float: right;
+	width: 45px;
+	height: 38px;
+	overflow: hidden;
+	text-indent: -2000px;
+	background:url(../../images/layout-box/more.png) no-repeat right center;
+}
+
+
+
+
+/* 通用插件 */
+
+.bdpadding10 .bd{
+	padding: 10px;
+}
+.shadowbd .bd{
+	background-position: 0 -508px;
+}
+</pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<div class="box box-gray shadowbd bdpadding10">
+	<div class="hd">
+		<h3>Header</h3>
+		<a href="#" class="more" title="">more</a>
+	</div>
+	<div class="bd">
+		bd
+	</div>
+</div></textarea>
+	</body>
+
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

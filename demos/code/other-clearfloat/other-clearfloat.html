@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>other - 清除浮动</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+
+/* 通过overflow的方式 */
+.overflow-clear{
+	overflow:auto;/*或者 hidden,scroll,不包括visible */
+	_height:1%; /*设置高度是为了ie6获取haslayout */
+}
+/* display 的方式*/
+.display-clear{
+	display:inline-block;
+}
+/* position的方式 */
+.position-clear{
+	position:absolute;
+}
+/* 浮动方式 */
+.float-clear{
+        float:left; /*或者right，不是none就行*/
+}
+/*zoom 的方式*/
+.zoom-clear{
+	zoom:1;/* only for IE6.7 因为他们haslayout，ie8以后和标准浏览器都弱化了haslayout */
+}
+/*after伪类+content方式*/
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+/* Hides from IE-mac \*/
+.clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+		</style>
+	</head>
+	<body style="padding: 10px;">
+
+<div class="overflow-clear" style="padding:10px;border:2px solid #999">
+	<div style="float:left;width:200px;height:200px;background:#ccc;"></div>
+	<p style="margin:0;padding-left:250px">我是文案</p>
+</div>
+
+
+		<pre class="codes">
+/* 通过overflow的方式 */
+.overflow-clear{
+	overflow:auto;/*或者 hidden,scroll,不包括visible */
+	_height:1%; /*设置高度是为了ie6获取haslayout */
+}
+/* display 的方式*/
+.display-clear{
+	display:inline-block;
+}
+/* position的方式 */
+.position-clear{
+	position:absolute;
+}
+/* 浮动方式 */
+.float-clear{
+        float:left; /*或者right，不是none就行*/
+}
+/*zoom 的方式*/
+.zoom-clear{
+	zoom:1;/* only for IE6.7 因为他们haslayout，ie8以后和标准浏览器都弱化了haslayout */
+}
+/*after伪类+content方式*/
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+/* Hides from IE-mac \*/
+.clearfix {height: 1%;}
+/* End hide from IE-mac */
+</pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<div class="overflow-clear" style="padding:10px;border:2px solid #999">
+	<div style="float:left;width:200px;height:200px;background:#ccc;"></div>
+	<p style="margin:0;padding-left:250px">我是文案</p>
+</div>
+</textarea>
+	</body>
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

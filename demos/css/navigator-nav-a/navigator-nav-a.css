@@ -1,0 +1,88 @@
+
+/*S= CSS */
+/*E= CSS */
+
+.l{float: left;}
+.r{float: right;}
+
+.bg_yellow,
+.bg_yellow .l,
+.bg_yellow .r,
+.bg_yellow1,
+.bg_yellow1 .l,
+.bg_yellow1 .r{
+	background-image: url(../../images/navigator-nav-a/bg_repeatX.png);
+	background-repeat: repeat-x;
+}
+
+
+
+
+/* 黄色渐变区块 eg: nav */
+.bg_yellow{
+	background-position: 0 -43px;
+}
+.bg_yellow .l,
+.bg_yellow .r{
+	width: 8px;
+	height: 33px;
+	background-position: 0 -79px;
+}
+.bg_yellow .r{
+	background-position: 0 -115px;
+}
+
+.bg_yellow1{
+	background-position: 0 -352px;
+}
+.bg_yellow1 .l,
+.bg_yellow1 .r{
+	width: 8px;
+	height: 40px;
+	background-position: 0 -265px;
+}
+.bg_yellow1 .r{
+	background-position: 0 -308px;
+}
+
+
+
+
+/* 导航样式 */
+.nav{
+	height: 33px;
+	line-height: 33px;
+}
+.nav ul{
+	float: left;
+	display: inline;
+	margin-left: 150px;
+}
+.nav ul li{
+	float: left;
+}
+.nav ul li a{
+	float: left;
+	margin: 0 2px;
+	margin-top: 5px;
+	width: 63px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: #512E00;
+	font-size: 15px;
+	font-family: "微软雅黑","宋体",Arial, sans-serif;
+	font-weight: bold;
+}
+.nav ul li a:hover,
+.nav ul li a.cur{
+	text-decoration: none;
+	background: url(../../images/navigator-nav-a/hover.png) no-repeat 0 0;
+}
+
+
+
+
+#searchBar{
+	height: 40px;
+}

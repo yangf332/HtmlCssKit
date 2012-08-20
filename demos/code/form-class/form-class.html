@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Form class</title>
+		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+
+form {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:300px;}
+fieldset {
+	border:1px solid #CCC;
+	margin-bottom:10px;}
+fieldset.login input {
+	width:125px;}
+legend {
+	font-weight:bold;
+	font-size:1.1em;}
+label {
+	display:block;
+	width:60px;
+	text-align:right;
+	float:left;
+	padding-right:10px;
+	padding-left:10px;
+	margin:5px 0;}
+input {
+	margin:5px 0;}
+input.text {
+	padding:0 0 0 3px;
+	width:172px;}
+input.submit {
+	margin:15px 0 0 70px;}
+		</style>
+	</head>
+	<body style="padding: 10px;">
+<form action="" method="post">
+	<fieldset class="login">
+		<legend>Login Information</legend>
+		<label for="username" class="hover" >Username</label>
+		<input type="text" id="username" class="required text" /><br />
+		<label for="password" class="hover" >Password</label>
+		<input type="password" id="password" class="required text" />
+	</fieldset>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="required text" /><br />
+		<label for="email">Email</label>
+		<input type="text" id="name" class="required email text" /><br />
+		<label for="date">Date</label>
+		<input type="text" id="date" class="required date text" /><br />
+		<label for="url">Website</label>
+		<input type="text" id="url" class="url text"  value="http://"/><br />
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" class="required phone text" /><br />
+		<label for="age">Over 13?</label>
+		<input type="checkbox" id="age" name="age" value="yes"/><br />
+		<input type="submit" value="Submit Form" class="submit" />
+	</fieldset>
+
+</form>
+
+
+		<pre class="codes">
+form {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:300px;}
+fieldset {
+	border:1px solid #CCC;
+	margin-bottom:10px;}
+fieldset.login input {
+	width:125px;}
+legend {
+	font-weight:bold;
+	font-size:1.1em;}
+label {
+	display:block;
+	width:60px;
+	text-align:right;
+	float:left;
+	padding-right:10px;
+	padding-left:10px;
+	margin:5px 0;}
+input {
+	margin:5px 0;}
+input.text {
+	padding:0 0 0 3px;
+	width:172px;}
+input.submit {
+	margin:15px 0 0 70px;}</pre>
+
+		<textarea class="codes" style="width: 600px; height: 300px;">
+<form action="" method="post">
+	<fieldset class="login">
+		<legend>Login Information</legend>
+		<label for="username" class="hover" >Username</label>
+		<input type="text" id="username" class="required text" /><br />
+		<label for="password" class="hover" >Password</label>
+		<input type="password" id="password" class="required text" />
+	</fieldset>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="required text" /><br />
+		<label for="email">Email</label>
+		<input type="text" id="name" class="required email text" /><br />
+		<label for="date">Date</label>
+		<input type="text" id="date" class="required date text" /><br />
+		<label for="url">Website</label>
+		<input type="text" id="url" class="url text"  value="http://"/><br />
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" class="required phone text" /><br />
+		<label for="age">Over 13?</label>
+		<input type="checkbox" id="age" name="age" value="yes"/><br />
+		<input type="submit" value="Submit Form" class="submit" />
+	</fieldset>
+
+</form></textarea>
+	</body>
+</html>
+<script type="text/javascript" src="../../../jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>

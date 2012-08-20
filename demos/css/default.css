@@ -1,0 +1,52 @@
+
+/*S= CSS */
+/*E= CSS */
+
+/*S= CSS Reset*/
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,button,
+textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;}
+
+fieldset ,img { border:0;}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-variant:normal;}
+input , button , textarea , select {
+	font-size:100%;}
+ul,ul { list-style:none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse:collapse;
+	border-spacing:0;}
+caption, th {
+    text-align: left;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+a {
+    text-decoration: none;
+	color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*E= CSS Reset*/
+
+
+.codes{
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px dashed #ccc;
+	color: #DB70DB/* #9D9D9D*/;
+	font-size: 12px;
+}

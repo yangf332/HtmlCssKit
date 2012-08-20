@@ -1,0 +1,28 @@
+
+/*S= CSS */
+/*E= CSS */
+
+.overflow-clear{
+	overflow:auto;/*或者 hidden,scroll,不包括visible */
+	_height:1%; /*设置高度是为了ie6获取haslayout */
+}
+
+.wrapCounter{
+	float: left;
+}
+.wrapCounter span{
+	float:left;
+	width:13px;
+	height:23px;
+	background: url(../../images/other-count/count.png) no-repeat 0 0;
+}
+.wrapCounter span.n0{background-position:0 0;}
+.wrapCounter span.n1{background-position:-13px 0;}
+.wrapCounter span.n2{background-position:-26px 0;}
+.wrapCounter span.n3{background-position:-39px 0;}
+.wrapCounter span.n4{background-position:-52px 0;}
+.wrapCounter span.n5{background-position:-65px 0;}
+.wrapCounter span.n6{background-position:-78px 0;}
+.wrapCounter span.n7{background-position:-91px 0;}
+.wrapCounter span.n8{background-position:-104px 0;}
+.wrapCounter span.n9{background-position:-117px 0;}

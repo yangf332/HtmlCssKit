@@ -5,43 +5,43 @@ a:hover{text-decoration:underline;}
 .clear{clear:both;width:0px;height:0px;overflow:hidden;}
 .demo
 {
-	padding-left:5px;padding-right:5px;margin-bottom:15px;
+    padding-left:5px;padding-right:5px;margin-bottom:15px;
 }
 .demo-title
 {
-	border-bottom:solid 2px #0b94c8;
+    border-bottom:solid 2px #0b94c8;
 }
 .demo-title a
 {
-	display:block;height:26px;line-height:28px;font-weight:bold;
-	background:url(../images/treeicon.gif) no-repeat 3px -45px;
-	padding-left:20px;font-size:13px;color:#333;
+    display:block;height:26px;line-height:28px;font-weight:bold;
+    background:url(../images/treeicon.gif) no-repeat 3px -45px;
+    padding-left:20px;font-size:13px;color:#333;
 }
 .demo-title a.close{
-	background:url(../images/treeicon.gif) no-repeat 3px 6px;
+    background:url(../images/treeicon.gif) no-repeat 3px 6px;
 }
 .demo-title a:hover{
-	text-decoration: none;
+    text-decoration: none;
 }
 .demo-content a
 {
-	width:132px;height:120px;overflow:hidden;color:#1f1e1e;text-align:center;text-decoration:none;
-	float:left;display:inline;margin-right:8px;margin-top:15px;
-	padding:1px;
+    width:132px;height:120px;overflow:hidden;color:#1f1e1e;text-align:center;text-decoration:none;
+    float:left;display:inline;margin-right:8px;margin-top:15px;
+    padding:1px;
 }
 .demo-content a:hover
 {
-	border:solid 1px #6593cf;padding:0;background:#dfefff;
+    border:solid 1px #6593cf;padding:0;background:#dfefff;
 }
 .demo-content img
 {
-	width:120px;height:88px;margin-left:3px;*margin-left:0;margin-top:5px;
+    width:120px;height:88px;margin-left:3px;*margin-left:0;margin-top:5px;
 }
 .demo-content span
 {
-	line-height:20px;
+    line-height:20px;
 }
 .demo .collapse
 {
-	background-position:3px 5px;
+    background-position:3px 5px;
 }

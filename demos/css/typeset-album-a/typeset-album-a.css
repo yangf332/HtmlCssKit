@@ -2,90 +2,90 @@
 /*S= CSS */
 /*E= CSS */
 .nobr{
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 
 
 .piclist{
-	float: left;
-	display: inline;
-	margin: 17px 0px 17px 5px;
+    float: left;
+    display: inline;
+    margin: 17px 0px 17px 5px;
 }
 .piclist li{
-	float: left;
-	display: inline;
-	margin:0 13px 15px 13px;
-	width: 99px;
-	height: 120px;
-	overflow: hidden;
+    float: left;
+    display: inline;
+    margin:0 13px 15px 13px;
+    width: 99px;
+    height: 120px;
+    overflow: hidden;
 }
 .picbox-wrap{
-	float: left;
-	width: 96px;
-	height: 83px;
-	border: 1px solid #CFCFCF;
-	overflow: hidden;
+    float: left;
+    width: 96px;
+    height: 83px;
+    border: 1px solid #CFCFCF;
+    overflow: hidden;
 }
 
 .piclist li a.picbox{
-	/*float: left;*/
-	width: 96px;
-	height: 83px;
+    /*float: left;*/
+    width: 96px;
+    height: 83px;
 
-	*font-size:72px;
+    *font-size:72px;
 
-	/* 图片垂直居中部分，勿动 */
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	*float:left;
-	*display:block;
+    /* 图片垂直居中部分，勿动 */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    *float:left;
+    *display:block;
 
-	*font-family:Arial;
+    *font-family:Arial;
 
-	overflow: hidden;
+    overflow: hidden;
 }
 .picbox-wrap span.videotime{
-	display: block;
-	padding-left: 5px;
-	position: relative;
-	text-align: left;
-	top: -23px;
-	width: 115px;
-	height: 20px;
-	line-height: 20px;
-	color: #fff;
-	font-weight: bold;
-	background-color: #000;
-	opacity:0.7;
-	filter: alpha(opacity=70);
-	_top:-20px;
-	*top:-20px;
+    display: block;
+    padding-left: 5px;
+    position: relative;
+    text-align: left;
+    top: -23px;
+    width: 115px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    opacity:0.7;
+    filter: alpha(opacity=70);
+    _top:-20px;
+    *top:-20px;
 }
 .picbox-wrap span.videotime a{
-	color: #fff;
+    color: #fff;
 }
 
 .piclist li a img{
 }
 .piclist h4{
-	float: left;
-	width: 100%;
-	height: 18px;
-	line-height: 18px;
-	text-align: center;
-	font-weight: normal;
-	color: #676767;
+    float: left;
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: normal;
+    color: #676767;
 }
 .piclist h4 a{
-	font-size: 12px;
-	color: #214FAD;
+    font-size: 12px;
+    color: #214FAD;
 }
 .piclist div{
-	text-align: center;
-	font-size: 12px;
-	color: #214FAD;
+    text-align: center;
+    font-size: 12px;
+    color: #214FAD;
 }

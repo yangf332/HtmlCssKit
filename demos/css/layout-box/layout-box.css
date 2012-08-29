@@ -4,29 +4,29 @@
 
 /* box基本样式 {*/
 .box {
-	border: 1px solid #A0D3F2;
-	background: #fff;
+    border: 1px solid #A0D3F2;
+    background: #fff;
 }
 .box .hd {
-	height:32px;
-	line-height:32px;
-	/*border-bottom: 1px solid #A0D3F2;*/
+    height:32px;
+    line-height:32px;
+    /*border-bottom: 1px solid #A0D3F2;*/
 }
 .box .hd h3 {
-	float:left;
-	display: inline;
-	height: 30px;
-	line-height: 30px;
-	font-size:14px;
-	color: #3C3C3C;
-	font-family: "微软雅黑","宋体",Arial, sans-serif;
+    float:left;
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    font-size:14px;
+    color: #3C3C3C;
+    font-family: "微软雅黑","宋体",Arial, sans-serif;
 }
 .box .hd .more{
-	float: right;
-	display: inline;
+    float: right;
+    display: inline;
 }
 .box .bd {
-	overflow: hidden;
+    overflow: hidden;
 }
 /* box基本样式 }*/
 
@@ -40,71 +40,71 @@
 .shadowbd .bd,
 .box-gray .hd,
 .box-blue .hd{
-	background-image: url(../../images/layout-box/bg_repeatX.png);
-	background-repeat: repeat-x;
+    background-image: url(../../images/layout-box/bg_repeatX.png);
+    background-repeat: repeat-x;
 }
 
 .box-gray .hd h3,
 .box-blue .hd h3{
-	background-image: url(../../images/layout-box/bg.png);
-	background-repeat: no-repeat;
+    background-image: url(../../images/layout-box/bg.png);
+    background-repeat: no-repeat;
 }
 
 /* box-gray */
 .box-gray{
-	padding: 1px;
+    padding: 1px;
 }
 .box-gray .hd{
-	height: 32px;
-	line-height: 32px;
-	background-position: 0 -151px;
+    height: 32px;
+    line-height: 32px;
+    background-position: 0 -151px;
 }
 .box-gray .hd h3{
-	margin-left: 8px;
-	padding-left: 24px;
-	background-position: -20px -8px;
+    margin-left: 8px;
+    padding-left: 24px;
+    background-position: -20px -8px;
 }
 
 /* box-blue */
 .box-blue{
-	padding: 1px;
+    padding: 1px;
 }
 .box-blue .hd{
-	height: 34px;
-	line-height: 34px;
-	background-position: 0 -228px;
+    height: 34px;
+    line-height: 34px;
+    background-position: 0 -228px;
 }
 .box-blue .hd h3{
-	margin-left: 8px;
-	padding-left: 24px;
-	background-position: -20px -95px;
+    margin-left: 8px;
+    padding-left: 24px;
+    background-position: -20px -95px;
 }
 .box-blue .bd{
-	background: #D1EAFF;
+    background: #D1EAFF;
 }
 
 /* box-light */
 .box-light{}
 .box-light .hd{
-	padding: 0 22px 0 8px;
-	height: 38px;
-	line-height: 38px;
-	background:url(../../images/layout-box/bg_boxhd.png) repeat-x 0 0;
+    padding: 0 22px 0 8px;
+    height: 38px;
+    line-height: 38px;
+    background:url(../../images/layout-box/bg_boxhd.png) repeat-x 0 0;
 }
 .box-light .hd h3{
-	height: 38px;
-	line-height: 38px;
-	padding-left: 22px;
-	font-size: 14px;
-	background:url(../../images/layout-box/arr.png) no-repeat left center;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 22px;
+    font-size: 14px;
+    background:url(../../images/layout-box/arr.png) no-repeat left center;
 }
 .box-light .hd a.more{
-	float: right;
-	width: 45px;
-	height: 38px;
-	overflow: hidden;
-	text-indent: -2000px;
-	background:url(../../images/layout-box/more.png) no-repeat right center;
+    float: right;
+    width: 45px;
+    height: 38px;
+    overflow: hidden;
+    text-indent: -2000px;
+    background:url(../../images/layout-box/more.png) no-repeat right center;
 }
 
 
@@ -113,10 +113,10 @@
 /* 通用插件 */
 
 .bdpadding10 .bd{
-	padding: 10px;
+    padding: 10px;
 }
 .shadowbd .bd{
-	background-position: 0 -508px;
+    background-position: 0 -508px;
 }
 
 

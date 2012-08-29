@@ -3,18 +3,18 @@
 /*E= CSS */
 
 .overflow-clear{
-	overflow:auto;/*或者 hidden,scroll,不包括visible */
-	_height:1%; /*设置高度是为了ie6获取haslayout */
+    overflow:auto;/*或者 hidden,scroll,不包括visible */
+    _height:1%; /*设置高度是为了ie6获取haslayout */
 }
 
 .wrapCounter{
-	float: left;
+    float: left;
 }
 .wrapCounter span{
-	float:left;
-	width:13px;
-	height:23px;
-	background: url(../../images/other-count/count.png) no-repeat 0 0;
+    float:left;
+    width:13px;
+    height:23px;
+    background: url(../../images/other-count/count.png) no-repeat 0 0;
 }
 .wrapCounter span.n0{background-position:0 0;}
 .wrapCounter span.n1{background-position:-13px 0;}

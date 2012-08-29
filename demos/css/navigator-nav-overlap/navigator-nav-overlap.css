@@ -4,50 +4,50 @@
 
 /*导航部分*/
 .nav {
-	margin:0 auto;
-	padding-left:6px;
-	width:949px;
-	height:30px;
-	background:url(../../images/navigator-nav-overlap/bg_nav.png) repeat-x;}
+    margin:0 auto;
+    padding-left:6px;
+    width:949px;
+    height:30px;
+    background:url(../../images/navigator-nav-overlap/bg_nav.png) repeat-x;}
 * html .nav { padding-left:0; width:955px;}
 .nav ul ,
 .nav ul li { float:left; }
 .nav ul li a {
-	float:left;padding:0 0 0 30px;
-	margin-left:-6px;
-	height:30px;
-	text-decoration:none;
-	font:14px/30px "宋体";
-	color:#000;
-	}
+    float:left;padding:0 0 0 30px;
+    margin-left:-6px;
+    height:30px;
+    text-decoration:none;
+    font:14px/30px "宋体";
+    color:#000;
+    }
 .nav ul li span{
-	float:left;
-	padding-right:25px;
-	cursor:pointer;
-	background:url(../../images/navigator-nav-overlap/right_nav.png) no-repeat right center;}
+    float:left;
+    padding-right:25px;
+    cursor:pointer;
+    background:url(../../images/navigator-nav-overlap/right_nav.png) no-repeat right center;}
 .nav ul li a.current {
-	font-weight:bold;
-	color:#fff;
-	background:url(../../images/navigator-nav-overlap/bg_nav_l.png) no-repeat ;}
+    font-weight:bold;
+    color:#fff;
+    background:url(../../images/navigator-nav-overlap/bg_nav_l.png) no-repeat ;}
 .nav ul li a:hover { color:#FFF;}
 .nav ul li a.current span {
-	background:url(../../images/navigator-nav-overlap/bg_navright_hover.png) no-repeat right center;}
+    background:url(../../images/navigator-nav-overlap/bg_navright_hover.png) no-repeat right center;}
 .nav ul li.first{ padding-left:0}
 .nav ul li.first a { padding-left:0}
 .nav ul li.first a b{
-	float:left;
-	margin-right:25px;
-	width:5px;
-	height:29px;
-	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -150px;}
+    float:left;
+    margin-right:25px;
+    width:5px;
+    height:29px;
+    background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -150px;}
 .nav ul li.first a.current {
-	background:url(../../images/navigator-nav-overlap/bg_nav_hover.gif) repeat-x left center;}
+    background:url(../../images/navigator-nav-overlap/bg_nav_hover.gif) repeat-x left center;}
 .nav ul li.first  a.current b{
-	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 0;}
+    background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 0;}
 
 .nav_r{
-	float: right;
-	width: 5px;
-	height: 29px;
-	background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -90px;
+    float: right;
+    width: 5px;
+    height: 29px;
+    background:url(../../images/navigator-nav-overlap/lr.png) no-repeat 0 -90px;
 }

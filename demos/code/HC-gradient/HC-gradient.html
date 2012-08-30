@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>demo</title>
-		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
-		<style type="text/css">
-			* {margin: 0; padding: 0;}
-			
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>demo</title>
+        <link type="text/css" rel="stylesheet" href="../../css/default.css" />
+        <style type="text/css">
+            * {margin: 0; padding: 0;}
+            
 .gradient{
     width:300px;
     height:150px;
-    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);	
-    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);	
-	background:red; /* 一些不支持背景渐变的浏览器 */  
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);   
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);   
+    background:red; /* 一些不支持背景渐变的浏览器 */  
     background:-moz-linear-gradient(top, red, rgba(0, 0, 255, 0.5));  
     background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5))); 
-	background:-o-linear-gradient(top, red, rgba(0, 0, 255, 0.5));	
+    background:-o-linear-gradient(top, red, rgba(0, 0, 255, 0.5));  
 }
-			
-			
+            
+            
 .radial{
     display:block;
     width:150px;
@@ -26,26 +26,26 @@
     border:1px solid blue;
     background-image:-webkit-gradient(radial, 45 45, 10, 52 50, 30, from(#A7D30C), to(rgba(1,159,98,0)), color-stop(90%, #019F62)),
         -webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188));
-	background: -moz-radial-gradient(10% 30%, white, black);/*gradient for firefox*/
+    background: -moz-radial-gradient(10% 30%, white, black);/*gradient for firefox*/
 }
-		</style>
-	</head>
-	<body style="padding: 10px;">
+        </style>
+    </head>
+    <body style="padding: 10px;">
 
-		<div class="gradient"></div>
-		<div class="radial"></div>
-		<pre class="codes">
+        <div class="gradient"></div>
+        <div class="radial"></div>
+        <pre class="codes">
 .gradient{
     width:300px;
     height:150px;
-    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);//* 下面这个是给ie8的 */	
-    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);	
-	background:red; /* 一些不支持背景渐变的浏览器 Opera*/  
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);//* 下面这个是给ie8的 */  
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);   
+    background:red; /* 一些不支持背景渐变的浏览器 Opera*/  
     background:-moz-linear-gradient(top, red, rgba(0, 0, 255, 0.5));  
     background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));  
 }</pre>
 
-		<textarea class="codes" style="width: 600px; height: 300px;">
+        <textarea class="codes" style="width: 600px; height: 300px;">
 <div class="gradient"></div>
 
 opacity表示透明度，默认的范围是从0 到 100，他们其实是百分比的形式。也就是说，0代表完全透明，100代表完全不透明。 
@@ -63,11 +63,11 @@ finishy 渐变透明效果结束处的 Y坐标。
 
 
 </textarea>
-	</body>
+    </body>
 </html>
 <script type="text/javascript" src="../../../jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	
+    
 })
 </script>

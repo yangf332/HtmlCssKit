@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>demo</title>
-		<link type="text/css" rel="stylesheet" href="../../css/default.css" />
-		<link type="text/css" rel="stylesheet" href="../../css/other-count/other-count.css" />
-	</head>
-	<body style="padding: 10px;">
-		<div id="" class="wrapCounter overflow-clear">
-			<span class="n0"></span>
-			<span class="n1"></span>
-			<span class="n2"></span>
-			<span class="n3"></span>
-			<span class="n4"></span>
-			<span class="n5"></span>
-			<span class="n6"></span>
-			<span class="n7"></span>
-			<span class="n8"></span>
-			<span class="n9"></span>
-		</div>
-		
-		<div style="clear:both"></div>
-		<br />
-		
-		<div class="wrapCounter" id="j_counter">
-			<span class="n0"></span>
-			<span class="n0"></span>
-			<span class="n0"></span>
-		</div>
-		
-		<div style="clear:both"></div>
-		<pre class="codes">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>demo</title>
+        <link type="text/css" rel="stylesheet" href="../../css/default.css" />
+        <link type="text/css" rel="stylesheet" href="../../css/other-count/other-count.css" />
+    </head>
+    <body style="padding: 10px;">
+        <div id="" class="wrapCounter overflow-clear">
+            <span class="n0"></span>
+            <span class="n1"></span>
+            <span class="n2"></span>
+            <span class="n3"></span>
+            <span class="n4"></span>
+            <span class="n5"></span>
+            <span class="n6"></span>
+            <span class="n7"></span>
+            <span class="n8"></span>
+            <span class="n9"></span>
+        </div>
+        
+        <div style="clear:both"></div>
+        <br />
+        
+        <div class="wrapCounter" id="j_counter">
+            <span class="n0"></span>
+            <span class="n0"></span>
+            <span class="n0"></span>
+        </div>
+        
+        <div style="clear:both"></div>
+        <pre class="codes">
 .wrapCounter{
-	float: left;
+    float: left;
 }
 .wrapCounter span{
-	float:left;
-	width:13px;
-	height:23px;
-	background: url(../../images/other-count/count.png) no-repeat 0 0;
+    float:left;
+    width:13px;
+    height:23px;
+    background: url(../../images/other-count/count.png) no-repeat 0 0;
 }
 .wrapCounter span.n0{background-position:0 0;}
 .wrapCounter span.n1{background-position:-13px 0;}
@@ -51,21 +51,21 @@
 .wrapCounter span.n8{background-position:-104px 0;}
 .wrapCounter span.n9{background-position:-117px 0;}</pre>
 
-		<textarea class="codes" style="width: 600px; height: 300px;">
-		<div id="" class="wrapCounter overflow-clear">
-			<span class="n0"></span>
-			<span class="n1"></span>
-			<span class="n2"></span>
-			<span class="n3"></span>
-			<span class="n4"></span>
-			<span class="n5"></span>
-			<span class="n6"></span>
-			<span class="n7"></span>
-			<span class="n8"></span>
-			<span class="n9"></span>
-		</div>
+        <textarea class="codes" style="width: 600px; height: 300px;">
+        <div id="" class="wrapCounter overflow-clear">
+            <span class="n0"></span>
+            <span class="n1"></span>
+            <span class="n2"></span>
+            <span class="n3"></span>
+            <span class="n4"></span>
+            <span class="n5"></span>
+            <span class="n6"></span>
+            <span class="n7"></span>
+            <span class="n8"></span>
+            <span class="n9"></span>
+        </div>
 </textarea>
-	</body>
+    </body>
 
 </html>
 
@@ -74,24 +74,24 @@ var count = 0;
 var pannel = document.getElementById("j_counter");
 var span = pannel.getElementsByTagName("span");
 
-	
+    
 setInterval(function(){
-	if (count == 999) {
-		count = 0;
-		span[0].className = span[1].className = span[2].className = 'n0';
-	}
-	var str = count;
-	str = str + '';
-	var arr = str.split('');
-	
-	span[2].className = 'n' + arr[0];
-	
-	var len = arr.length;
-	for (var i=0; i<len; i++) {
-		span[span.length - len + i].className = 'n' + arr[i];
-	}
-	
-	count++;
+    if (count == 999) {
+        count = 0;
+        span[0].className = span[1].className = span[2].className = 'n0';
+    }
+    var str = count;
+    str = str + '';
+    var arr = str.split('');
+    
+    span[2].className = 'n' + arr[0];
+    
+    var len = arr.length;
+    for (var i=0; i<len; i++) {
+        span[span.length - len + i].className = 'n' + arr[i];
+    }
+    
+    count++;
 
 }, 1000)
 </script>
